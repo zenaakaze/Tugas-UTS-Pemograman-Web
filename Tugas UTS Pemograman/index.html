@@ -1,0 +1,20 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Login - BukuKita</title><link rel="stylesheet" href="css/style.css"></head><body data-page="login">
+<div class="login-wrap"><main><section class="card" aria-labelledby="jdl">
+<h1 id="jdl">📚 BukuKita</h1><p>Masuk untuk memesan buku kuliah.</p>
+<form id="formLogin" novalidate>
+<label for="email">Email</label><input type="email" id="email" autocomplete="username"><div class="err" id="errEmail"></div>
+<label for="password">Password</label><input type="password" id="password" autocomplete="current-password"><div class="err" id="errPass"></div>
+<div class="row"><button type="submit">Login</button>
+<button type="button" class="sec" id="btnLupa">Lupa Password</button>
+<button type="button" class="sec" id="btnDaftar">Daftar</button></div>
+<p class="err">Demo by: Fernando Dermawan</p>
+</form></section></main></div>
+<div class="modal" id="modalLupa" role="dialog" aria-modal="true"><div class="box"><h2>Lupa Password</h2>
+<label for="emailLupa">Email terdaftar</label><input type="email" id="emailLupa"><div class="err" id="errLupa"></div>
+<div class="row"><button type="button" id="kirimLupa">Kirim link reset</button><button type="button" class="sec" data-tutup>Batal</button></div></div></div>
+<div class="modal" id="modalDaftar" role="dialog" aria-modal="true"><div class="box"><h2>Daftar Akun</h2>
+<label for="namaDaftar">Nama lengkap</label><input id="namaDaftar">
+<label for="emailDaftar">Email</label><input type="email" id="emailDaftar">
+<label for="passDaftar">Password (min. 6 karakter)</label><input type="password" id="passDaftar"><div class="err" id="errDaftar"></div>
+<div class="row"><button type="button" id="simpanDaftar">Daftar</button><button type="button" class="sec" data-tutup>Batal</button></div></div></div>
+<script src="js/data.js"></script><script src="js/script.js"></script></body></html>

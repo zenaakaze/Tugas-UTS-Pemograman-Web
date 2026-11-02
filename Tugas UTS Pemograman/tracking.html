@@ -1,0 +1,10 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tracking - BukuKita</title><link rel="stylesheet" href="css/style.css"></head><body data-page="tracking">
+<header class="top"><span class="logo">📚 BukuKita</span>
+<nav aria-label="Menu utama"><a href="dashboard.html">Dashboard</a><a href="stok.html">Stok</a><a href="checkout.html">Pemesanan</a><a href="tracking.html">Tracking</a></nav>
+<button class="sec" id="btnLogout" type="button">Keluar</button></header>
+<main><section class="card"><h1>Informasi Pengiriman</h1><form id="formTrack" novalidate>
+<label for="nomorDO">Nomor Delivery Order</label><input id="nomorDO" placeholder="contoh: DO2026001"><div class="err" id="errDO"></div>
+<button type="submit">Cari</button></form></section>
+<section class="card hide" id="hasil" aria-live="polite"><h2>Hasil pelacakan</h2><div id="progress" class="progress"></div>
+<table><tbody id="detail"></tbody></table></section></main>
+<script src="js/data.js"></script><script src="js/script.js"></script></body></html>

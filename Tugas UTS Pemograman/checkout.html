@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pemesanan - BukuKita</title><link rel="stylesheet" href="css/style.css"></head><body data-page="checkout">
+<header class="top"><span class="logo">📚 BukuKita</span>
+<nav aria-label="Menu utama"><a href="dashboard.html">Dashboard</a><a href="stok.html">Stok</a><a href="checkout.html">Pemesanan</a><a href="tracking.html">Tracking</a></nav>
+<button class="sec" id="btnLogout" type="button">Keluar</button></header>
+<main><section class="card"><h1>Pemesanan</h1>
+<div class="row"><select id="pilihBuku" aria-label="Pilih buku" style="flex:2"></select><input type="number" id="jmlBuku" value="1" min="1" style="flex:1" aria-label="Jumlah"><button id="tambahItem" type="button">Tambah ke pesanan</button></div>
+<div style="overflow-x:auto;margin-top:1rem"><table><thead><tr><th>Buku</th><th>Harga</th><th>Jumlah</th><th>Subtotal</th><th></th></tr></thead><tbody id="tbCart"></tbody></table></div>
+<h3 style="margin-top:1rem">Total: <span id="total">Rp0</span></h3></section>
+<section class="card"><h2>Data pemesan &amp; pembayaran</h2><form id="formCheckout" novalidate><div class="grid">
+<div><label for="cNama">Nama</label><input id="cNama"><div class="err" id="eNama"></div></div>
+<div><label for="cHp">No. HP</label><input id="cHp" inputmode="numeric"><div class="err" id="eHp"></div></div>
+<div><label for="cAlamat">Alamat</label><input id="cAlamat"><div class="err" id="eAlamat"></div></div>
+<div><label for="cEks">Ekspedisi</label><select id="cEks"><option>JNE</option><option>SiCepat</option><option>J&amp;T</option></select></div>
+<div><label for="cBayar">Pembayaran</label><select id="cBayar"><option>Transfer Bank</option><option>E-Wallet</option><option>COD</option></select></div></div>
+<div class="row"><button type="submit">Pesan sekarang</button></div></form></section>
+<section class="card" id="riwayat"><h2>Riwayat transaksi</h2><div style="overflow-x:auto"><table><thead><tr><th>No. DO</th><th>Pemesan</th><th>Tanggal</th><th>Total</th></tr></thead><tbody id="tbRiwayat"></tbody></table></div></section></main>
+<div class="modal" id="modalOk" role="dialog" aria-modal="true"><div class="box"><h2>Pesanan berhasil ✅</h2><p>Nomor Delivery Order: <strong id="noDO"></strong></p><p>Gunakan nomor ini di halaman Tracking.</p><div class="row"><a class="btn" href="tracking.html">Lacak</a><button class="sec" data-tutup>Tutup</button></div></div></div>
+<script src="js/data.js"></script><script src="js/script.js"></script></body></html>
